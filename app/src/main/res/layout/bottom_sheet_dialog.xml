@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/lg" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="30dp"
+        android:text="Login or Signup"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler1"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/text2"
+        android:layout_marginLeft="90dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bottomsheetbutton"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="+91" />
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="#8AAAAAAA" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Mobile Number" />
+
+        <ImageView
+            android:id="@+id/imagestar"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_star_24" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bottomsheetbutton2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="CONTINUE"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

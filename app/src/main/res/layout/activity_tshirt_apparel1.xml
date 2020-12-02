@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TshirtApparel1">
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="10dp"
+        android:translationZ="5dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/lg"
+                android:text="Men TSHIRTS \n 1638 Items"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:src="@drawable/ic_search" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_favorite" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_outline_shopping_basket_24" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginTop="2dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/relat2sub"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:background="#92E74292">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="FLAT 400 OFF*"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginLeft="22dp"
+                android:text="MYNTRA400"
+                android:textColor="@android:color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_toRightOf="@id/text1"
+                android:gravity="center"
+                android:text="Free Delivery"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="On first order"
+                android:textColor="@android:color/white"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relat2sub">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

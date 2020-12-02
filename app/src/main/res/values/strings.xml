@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">MyntraApp</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_sign_in">Verify and Sign In</string>
+    <string name="sign_out">sign out</string>
+    <string name="open">OpenNavigation</string>
+    <string name="close">CloseNavigation</string>
+    <string name="facebook_app_id">facebookapp</string>
+    <string name="fb_login_protocol">fb_login</string>
+
+</resources>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:translationZ="5dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/lg" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/ic_search" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_notification" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_favorite" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_outline_shopping_basket_24" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar">
+
+        <RelativeLayout
+            android:id="@+id/relat1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/recycler1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:elevation="4dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/ViewPagerImageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/recycler1"
+                android:layout_marginTop="-90dp"
+                android:background="@android:color/white"
+                android:paddingStart="110dp"
+                android:paddingLeft="110dp"
+                android:paddingEnd="110dp"
+                android:paddingRight="110dp" />
+
+            <LinearLayout
+                android:id="@+id/recylerLin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ViewPagerImageSlider"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recycler2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="DEALS OF THE DAY"
+                    android:textColor="#B7000000"
+                    android:textSize="15dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ViewPagerImageSlider"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recycler2"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="end"
+                    android:text="*T &amp; C Apply"
+                    android:textSize="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recylerLin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recylerLin2"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recycler2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="BUYS OF THE MOMENT"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/nikeplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back1"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginRight="35dp"
+                        android:text="Inspire your \n\t Journey"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recylerLin4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recylerLin3"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recycler2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Featured Brand"
+                    android:textColor="#B7000000"
+                    android:textSize="15dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recylerLin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recylerLin4"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recycler2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="CATEGORIES TO BAG"
+                    android:textColor="#B7000000"
+                    android:textSize="15dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recylerLin5"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@android:color/white"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:translationZ="10dp">
+
+                    <GridView
+                        android:id="@+id/grid_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:layout_marginTop="7dp"
+                        android:columnWidth="90dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+<!--    <androidx.drawerlayout.widget.DrawerLayout-->
+<!--        android:id="@+id/DrawerLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <com.google.android.material.navigation.NavigationView-->
+<!--            android:id="@+id/navi_view"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            app:headerLayout="@layout/navigation_header"-->
+<!--            app:menu="@menu/navigation_menu">-->
+
+<!--        </com.google.android.material.navigation.NavigationView>-->
+<!--    </androidx.drawerlayout.widget.DrawerLayout>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:menu="@menu/bottom_navigation_menu" />
+
+
+</RelativeLayout>

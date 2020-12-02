@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF0F1"
+    tools:context=".Men_Home_TopWear">
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@android:color/white"
+        android:translationZ="5dp">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/lg"
+                android:text="Anouk"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:src="@drawable/ic_search" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_notification" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_favorite" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_outline_shopping_basket_24" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/uuu"
+        android:orientation="vertical"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:id="@+id/relat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/logo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/unitedbyblue" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo1"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

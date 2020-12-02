@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "969402006461",
+    "firebase_url": "https://myntraapp-1dda9.firebaseio.com",
+    "project_id": "myntraapp-1dda9",
+    "storage_bucket": "myntraapp-1dda9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969402006461:android:313224b16dfa72a6cf70d4",
+        "android_client_info": {
+          "package_name": "com.example.myntraapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969402006461-l9p2jtkdpqiudq56cnd0qnmpf6uvpmnt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myntraapp",
+            "certificate_hash": "fb3f7a428737e886ff252afb7f2c307a8abc4511"
+          }
+        },
+        {
+          "client_id": "969402006461-dn5jsqc6upvdqrnikfqm2r1vtd9ptavf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW0VbuNMDcS99Koa6Uyu4AVSUZ0k8mprg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969402006461-dn5jsqc6upvdqrnikfqm2r1vtd9ptavf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
